@@ -37,8 +37,8 @@ type DemoApp struct {
 }
 
 func (d *DemoApp) Call(call string, result *[]byte) error {
-	//str := "{ \"result\": \"Success\" }"
-	result = nil
+	str := []byte("{ \"result\": \"Success\" }")
+	result = &str
 
 	return nil
 }
